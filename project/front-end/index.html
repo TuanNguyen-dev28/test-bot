@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244b41">
+  <title>Xưởng Vải — Trợ lý tư vấn</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="/" aria-label="Xưởng Vải, trang chủ"><span class="brand-mark">V</span><span>XƯỞNG VẢI<small>Chọn chất liệu. Tạo khác biệt.</small></span></a>
+      <span class="header-note">Góc tư vấn chất liệu</span>
+    </header>
+
+    <main>
+      <section class="intro">
+        <span class="eyebrow">TỪ CHẤT LIỆU ĐẾN SẢN PHẨM</span>
+        <h1>Tìm hiểu vải,<br><em>bắt đầu bằng một câu hỏi.</em></h1>
+        <p>Tra cứu giá, màu sắc và số lượng còn lại.<br>Thông tin bạn cần, ngay trong cuộc trò chuyện.</p>
+      </section>
+
+      <div class="workspace">
+        <aside class="catalog" aria-labelledby="catalog-title">
+          <div class="section-heading"><h2 id="catalog-title">Chất liệu hiện có</h2><span id="fabric-count">—</span></div>
+          <p class="muted">Chọn một chất liệu để hỏi giá.</p>
+          <div id="fabric-list" class="fabric-list" aria-live="polite"><p class="muted">Đang tải chất liệu…</p></div>
+          <div class="catalog-note"><span aria-hidden="true">↗</span><p>Bạn cần thêm thông tin?<br>Hãy ghi tên loại vải trong câu hỏi.</p></div>
+        </aside>
+
+        <section class="chat" aria-labelledby="chat-title">
+          <div class="chat-header">
+            <div class="avatar" aria-hidden="true">V</div>
+            <div><h2 id="chat-title">Trợ lý Xưởng Vải</h2><p id="connection-status" role="status">Đang kết nối…</p></div>
+            <button id="clear-chat" class="clear-button" type="button">Làm mới</button>
+          </div>
+          <div id="messages" class="messages" role="log" aria-live="polite" aria-label="Cuộc trò chuyện">
+            <div class="message assistant"><span class="message-label">TRỢ LÝ XƯỞNG VẢI</span><p>Chào bạn! Bạn đang tìm hiểu loại vải nào? Tôi có thể giúp bạn tra giá, màu sắc và tồn kho của cotton, linen.</p></div>
+          </div>
+          <div class="suggestions" aria-label="Câu hỏi gợi ý">
+            <button type="button" data-question="Giá vải cotton bao nhiêu?">Giá vải cotton <span>↗</span></button>
+            <button type="button" data-question="Linen có màu gì?">Màu vải linen <span>↗</span></button>
+            <button type="button" data-question="Cotton còn hàng không?">Cotton còn hàng? <span>↗</span></button>
+          </div>
+          <form id="chat-form" class="composer">
+            <label class="sr-only" for="question">Nhập câu hỏi về vải</label>
+            <input id="question" name="question" maxlength="1000" placeholder="Bạn muốn hỏi gì về vải?" autocomplete="off" required>
+            <button id="send-button" type="submit" aria-label="Gửi câu hỏi">Gửi <span aria-hidden="true">↑</span></button>
+          </form>
+          <p class="chat-footnote">Hỏi có dấu hoặc không dấu đều được.</p>
+        </section>
+      </div>
+    </main>
+    <footer><span>XƯỞNG VẢI <span class="footer-divider">/</span> Tư vấn chất liệu</span><span>Mỗi ý tưởng đẹp bắt đầu từ một tấm vải.</span></footer>
+  </div>
+</body>
+</html>
