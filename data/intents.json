@@ -1,0 +1,32 @@
+{
+  "intents": [
+    {
+      "intent": "ask_price",
+      "examples": [
+        "Vải cotton giá bao nhiêu?",
+        "Cotton bao nhiêu tiền một mét?",
+        "Giá vải cotton hiện tại?",
+        "Cho tôi hỏi giá cotton",
+        "1 mét cotton bao nhiêu?"
+      ]
+    },
+    {
+      "intent": "ask_color",
+      "examples": [
+        "Cotton có màu gì?",
+        "Vải cotton có những màu nào?",
+        "Có cotton màu đen không?",
+        "Cotton có màu trắng không?"
+      ]
+    },
+    {
+      "intent": "ask_stock",
+      "examples": [
+        "Cotton còn hàng không?",
+        "Còn bao nhiêu mét cotton?",
+        "Cotton còn trong kho không?",
+        "Kho còn cotton không?"
+      ]
+    }
+  ]
+}

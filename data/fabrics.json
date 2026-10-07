@@ -1,0 +1,17 @@
+{
+  "cotton": {
+    "name": "Cotton 100%",
+    "price": 85000,
+    "colors": ["đen", "trắng", "be"],
+    "width": 1.6,
+    "stock": 120
+  },
+
+  "linen": {
+    "name": "Linen",
+    "price": 120000,
+    "colors": ["trắng", "be", "nâu"],
+    "width": 1.5,
+    "stock": 70
+  }
+}
